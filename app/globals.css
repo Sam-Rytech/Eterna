@@ -9,3 +9,7 @@ body {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.Nav-li{
+  height: 70px;
+}
