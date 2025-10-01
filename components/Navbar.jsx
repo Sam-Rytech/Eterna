@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-      <ul>
+      <ul className='flex flex-end gap-5'>
         <li>Home</li>
         <li>About</li>
         <li>Destination</li>
