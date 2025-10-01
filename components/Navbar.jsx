@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='bg-[url("./public/Hero/Hero.png")] bg-cover bg-center'>
       <ul className='flex flex-end gap-5 justify-end'>
         <li>Home</li>
         <li>About</li>
