@@ -19,6 +19,20 @@ const Navbar = () => {
             <a>Contact us</a>
           </li>
         </ul>
+        <ul className="flex flex-end gap-5 justify-end w-[100%] list-none items-center sidebar">
+          <li className="Nav-li">
+            <a>Home</a>
+          </li>
+          <li className="Nav-li">
+            <a>About</a>
+          </li>
+          <li className="Nav-li">
+            <a>Destination</a>
+          </li>
+          <li className="Nav-li">
+            <a>Contact us</a>
+          </li>
+        </ul>
       </div>
     </nav>
   )
