@@ -9,38 +9,3 @@ body {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.Nav-li {
-  height: 70px;
-  margin-right: 20px;
-}
-.Nav-li a {
-  height: 100%;
-  padding: 0 20px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.sidebar{
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 150px;
-  Z-index: 100;
-  background-color: #0b1956c1;
-  backdrop-filter: blur(10px);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-top: 20px;
-}
-.sidebar li{
-  width: 100%;
-}
-.sidebar a{
-  width: 100%;
-}
