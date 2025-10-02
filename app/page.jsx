@@ -4,7 +4,7 @@ import "./globals.css"
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-[#fdf9f6] text-gray-900">
       <Navbar />
     </div>
   )
