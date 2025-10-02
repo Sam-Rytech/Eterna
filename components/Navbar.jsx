@@ -1,10 +1,15 @@
+'use client'
+
 import React from 'react'
 import '@/app/globals.css'
+import { useState } from 'react'
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false)
   return (
     <nav className='bg-[url("/Hero/Hero.png")] bg-cover bg-center h-[900px] bg-no-repeat'>
       <div>
+        {/* Main Navbar */}
         <ul className="flex flex-end gap-5 justify-end w-[100%] list-none items-center">
           <li className="Nav-li">
             <a>Home</a>
@@ -18,8 +23,10 @@ const Navbar = () => {
           <li className="Nav-li">
             <a>Contact us</a>
           </li>
-              </ul>
-              <ul className="flex flex-end gap-5 justify-end w-[100%] list-none items-center">
+        </ul>
+
+        {/* Side Navbar */}
+        <ul className="flex flex-end gap-5 justify-end w-[100%] list-none items-center">
           <li className="Nav-li">
             <a>Home</a>
           </li>

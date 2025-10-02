@@ -13,6 +13,7 @@ body {
 .Nav-li {
   height: 70px;
   margin-right: 20px;
+  color: white;
 }
 .Nav-li a {
   height: 100%;
