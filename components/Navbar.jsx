@@ -1,4 +1,5 @@
 import React from 'react'
+import Hero from './Hero'
 import "../app/globals.css"
 
 const Navbar = () => {
@@ -24,6 +25,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className="border-b-2 border-[#696969] w-[90%] m-auto"></div>
+
+      <Hero />
     </nav>
   )
 }
