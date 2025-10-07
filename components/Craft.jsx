@@ -4,7 +4,7 @@ const Craft = () => {
   return (
     <section>
       <div>
-        <p>Crafted for</p>
+        <p className='text-7xl'>Crafted for</p>
         <p>the few</p>
       </div>
       <div>
