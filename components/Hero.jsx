@@ -15,7 +15,7 @@ const Hero = () => {
             Where every destination <br /> feels like a private masterpiece
           </div>
           <div className='mt-5 mx-15'>
-            <button className='flex gap-2 border-2 px-2 py-1'>
+            <button className='flex gap-2 border-2 px-2 py-1 uppercase'>
               Discover Now
               <span>
                 <ArrowRight />
