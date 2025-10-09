@@ -61,44 +61,51 @@ const Destination = () => {
   }
 
   return (
-    <section>
-      <div className="text-7xl text-center my-10 text-[#0B1956]">
+    <section className="relative w-full overflow-hidden">
+      {/* Heading */}
+      <div className="text-6xl md:text-7xl text-center my-10 text-[#0B1956]">
         <p>Where Will You Escape To?</p>
       </div>
 
+      {/* Scrollable Row */}
       <div
         ref={scrollRef}
-        className="w-full overflow-x-scroll cursor-grab select-none no-scrollbar scrollbar-hide mx-10"
+        className="w-full overflow-x-scroll cursor-grab select-none no-scrollbar scrollbar-hide px-[5vw]"
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
       >
-        <div className="flex items-end space-x-6 pb-6">
+        <div className="flex items-end pb-6">
           {images.map((img, i) => (
-            <div key={i} className="flex-shrink-0 text-center mr-15">
+            <div
+              key={i}
+              className="flex-shrink-0 text-start mr-[60px] last:mr-0"
+            >
               <Image
                 src={img.src}
                 alt={img.alt}
                 width={img.width}
                 height={img.height}
-                className="object-cover border-gray-200 pointer-events-none"
+                className="object-cover pointer-events-none"
               />
-              <div className='flex items-start'>
-                <p className="mt-2 capitalize text-gray-700">{img.location}</p>
-              </div>
+              <p className="mt-2 capitalize text-gray-700">{img.location}</p>
             </div>
           ))}
 
+          {/* View All button (scrolls with images) */}
           <Link
             href="/gallery"
-            className="flex-shrink-0 my-8 inline-flex items-center justify-center px-5 py-2 border border-gray-300 text-sm font-medium bg-white hover:bg-gray-100"
+            className="flex-shrink-0 inline-flex items-center justify-center px-6 py-2 border border-gray-300 text-base font-medium bg-white hover:bg-gray-100 shadow-md mr-[80px]"
           >
-            View All
+            VIEW ALL
             <span className="ml-2">
               <ArrowRight />
             </span>
           </Link>
+
+          {/* End spacing (adds breathing room after button) */}
+          <div className="flex-shrink-0 w-[10vw]" />
         </div>
       </div>
     </section>
