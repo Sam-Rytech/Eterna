@@ -4,7 +4,7 @@ import React from 'react'
 
 const Craft = () => {
   return (
-    <section>
+    <section id='about'>
       <div className="text-7xl mx-15 my-15 text-[#0B1956]">
         <p className="">Crafted for</p>
         <p className="ml-[18.4%]">the few</p>

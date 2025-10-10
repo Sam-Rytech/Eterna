@@ -61,7 +61,7 @@ const Destination = () => {
   }
 
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden" id='destinations'>
       {/* Heading */}
       <div className="text-6xl md:text-7xl text-center my-10 text-[#0B1956]">
         <p>Where Will You Escape To?</p>
