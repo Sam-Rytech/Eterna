@@ -12,7 +12,7 @@ const Craft = () => {
       <div className="mx-15 flex gap-10">
         <div className="w-[322px] h-[408px] relative">
           {' '}
-          <Image src={'/craft/craft.png'} fill className="object-cover" />{' '}
+          <Image src={'/craft/craft.png'} alt='craft' fill className="object-cover" />{' '}
         </div>
         <div>
           <div className="w-[600px] text-lg leading-7 text-[#0B1956]">
