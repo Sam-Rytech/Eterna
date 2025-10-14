@@ -22,7 +22,7 @@ const Book = () => {
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/book/book.png"
+            src="/Book/book.png"
             alt="Tropical background"
             fill
             priority
