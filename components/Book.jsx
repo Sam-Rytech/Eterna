@@ -7,7 +7,7 @@ import React from 'react'
 const Book = () => {
   return (
     <section className="relative w-full mt-10 overflow-hidden">
-      <div className="relative flex flex-col gap-10 md:gap-16 items-center justify-center min-h-[70vh] md:min-h-[80vh] text-center py-20">
+      <div className="relative flex flex-col gap-10 md:gap-16 items-center justify-center min-h-[687px] text-center py-20">
         {/* Text */}
         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-[#11143D]">
           What are you waiting for?
