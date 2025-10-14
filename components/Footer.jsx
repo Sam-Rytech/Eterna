@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
         <p className="italic text-white/80 text-3xl md:text-4xl">Eterna</p>
 
-        <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 text-sm md:text-base">
+        <div className="flex flex-row gap-8 sm:gap-16 text-sm md:text-base">
           <ul className="space-y-2">
             <li className="hover:underline cursor-pointer">Home</li>
             <li className="hover:underline cursor-pointer">About</li>

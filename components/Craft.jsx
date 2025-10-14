@@ -22,7 +22,7 @@ const Craft = () => {
         {/* Image */}
         <div className="relative w-full md:w-[322px] h-[300px] sm:h-[400px] md:h-[408px] flex-shrink-0">
           <Image
-            src="/craft/craft.png"
+            src="/Craft/craft.png"
             alt="craft"
             fill
             className="object-cover"
