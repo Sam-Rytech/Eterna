@@ -4,38 +4,13 @@ import React, { useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
-import '../app/globals.css'
 
 const Destination = () => {
   const images = [
-    {
-      src: '/Escape/E1.png',
-      alt: 'Image 1',
-      width: 554,
-      height: 434,
-      location: 'Maldives',
-    },
-    {
-      src: '/Escape/E2.png',
-      alt: 'Image 2',
-      width: 342,
-      height: 262,
-      location: 'Amalfi Coast',
-    },
-    {
-      src: '/Escape/E3.png',
-      alt: 'Image 3',
-      width: 431,
-      height: 325,
-      location: 'Dubai',
-    },
-    {
-      src: '/Escape/E4.png',
-      alt: 'Image 4',
-      width: 439,
-      height: 250,
-      location: 'Santorini',
-    },
+    { src: '/Escape/E1.png', alt: 'Maldives', location: 'Maldives' },
+    { src: '/Escape/E2.png', alt: 'Amalfi Coast', location: 'Amalfi Coast' },
+    { src: '/Escape/E3.png', alt: 'Dubai', location: 'Dubai' },
+    { src: '/Escape/E4.png', alt: 'Santorini', location: 'Santorini' },
   ]
 
   const scrollRef = useRef(null)
@@ -61,50 +36,56 @@ const Destination = () => {
   }
 
   return (
-    <section className="relative w-full overflow-hidden" id='destinations'>
+    <section
+      id="destinations"
+      className="relative w-full overflow-hidden py-16"
+    >
       {/* Heading */}
-      <div className="text-6xl md:text-7xl text-center my-10 text-[#0B1956]">
-        <p>Where Will You Escape To?</p>
+      <div className="text-center text-[#0B1956] mb-12">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight">
+          Where Will You Escape To?
+        </h2>
       </div>
 
       {/* Scrollable Row */}
       <div
         ref={scrollRef}
-        className="w-full overflow-x-scroll cursor-grab select-none no-scrollbar scrollbar-hide px-[5vw]"
+        className="w-full overflow-x-scroll no-scrollbar select-none cursor-grab active:cursor-grabbing px-6 sm:px-10 md:px-14 lg:px-[5vw]"
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
       >
-        <div className="flex items-end pb-6">
+        <div className="flex items-end gap-8 md:gap-12 pb-6">
           {images.map((img, i) => (
             <div
               key={i}
-              className="flex-shrink-0 text-start mr-[60px] last:mr-0"
+              className="flex-shrink-0 text-start w-[70vw] sm:w-[50vw] md:w-[35vw] lg:w-[25vw]"
             >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                width={img.width}
-                height={img.height}
-                className="object-cover pointer-events-none"
-              />
-              <p className="mt-2 capitalize text-gray-700">{img.location}</p>
+              <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] overflow-hidden">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover pointer-events-none"
+                />
+              </div>
+              <p className="mt-3 text-lg md:text-xl text-gray-700 capitalize">
+                {img.location}
+              </p>
             </div>
           ))}
 
-          {/* View All button (scrolls with images) */}
+          {/* View All button */}
           <Link
             href="/gallery"
-            className="flex-shrink-0 inline-flex items-center justify-center px-6 py-2 border border-gray-300 text-base font-medium bg-white hover:bg-gray-100 shadow-md mr-[80px]"
+            className="flex-shrink-0 inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-sm md:text-base font-medium text-[#0B1956] bg-white hover:bg-gray-100 shadow-md whitespace-nowrap"
           >
             VIEW ALL
-            <span className="ml-2">
-              <ArrowRight />
-            </span>
+            <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
 
-          {/* End spacing (adds breathing room after button) */}
+          {/* End spacing */}
           <div className="flex-shrink-0 w-[10vw]" />
         </div>
       </div>
